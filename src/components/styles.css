@@ -1,0 +1,147 @@
+.header-app {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: #22262a;
+	z-index: 1;
+}
+.app-title {
+	color: white;
+	text-align: left;
+	width: 60%;
+}
+.drag-drop {
+	cursor: pointer;
+	background-color: #151a1e;
+	padding: 1rem;
+	margin: 16px;
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	color: white;
+	font-weight: bold;
+}
+
+.drag-drop p {
+	text-align: center;
+	margin-top: 16px;
+}
+
+.drag-drop-outline {
+	position: absolute;
+	border-radius: 50%;
+	width: 320px;
+	height: 320px;
+	outline: 5px dashed #006cc7;
+	animation: drag-drop 120s infinite linear;
+}
+.drag-drop-circle-1 {
+	border-radius: 50%;
+	position: absolute;
+	border: 100px solid #132144;
+	width: 500px;
+	height: 500px;
+}
+.drag-drop-circle-2 {
+	border-radius: 50%;
+	position: absolute;
+	border: 100px solid #18233d;
+	width: 650px;
+	height: 650px;
+}
+.drag-drop-circle-3 {
+	border-radius: 50%;
+	position: absolute;
+	border: 125px solid #1c2135;
+	width: 900px;
+	height: 900px;
+}
+
+.drop-icon {
+	width: 100px;
+}
+
+.selected-file {
+	text-align: left;
+}
+.data-content {
+	padding: 2rem;
+	background-color: #070b0d;
+	min-height: 40rem;
+	z-index: 2;
+	position: relative;
+}
+.data-display {
+	width: 100%;
+	min-height: 53rem;
+	border-radius: 5px;
+	padding: 1rem;
+}
+.header-accordion {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.price-label {
+	margin-right: 1rem;
+}
+.data-row {
+	display: flex;
+	justify-content: space-evenly;
+}
+.data-row span {
+	width: 100%;
+	text-align: left;
+	margin-top: 0.5rem;
+}
+
+@keyframes drag-drop {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+body {
+	background-color: #22262a;
+}
+.accordion-background button {
+	background-color: #22262a;
+	color: white;
+}
+.accordion-item {
+	border-color: rgb(0, 0, 0);
+}
+.accordion-container {
+	background-color: transparent;
+}
+.accordion-body {
+	background-color: #22262a;
+	color: white;
+}
+.accordion-button:not(.collapsed) {
+	background-color: #22262a;
+	color: white;
+}
+.accordion-button:not(.collapsed)::after{
+	background-image: var(--cui-accordion-button-icon, url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27rgba%2844, 56, 74, 0.95%29%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e"));
+}
+.information{
+	text-align: center;
+	color:white;
+}
+.information h1{
+	margin-top: 3rem;
+}
+.information h1 a{
+	text-decoration: none;
+	text-transform: uppercase;
+	cursor: pointer;
+}
