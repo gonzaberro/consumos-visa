@@ -15,7 +15,7 @@
 	background-color: #151a1e;
 	padding: 1rem;
 	margin: 16px;
-	border-radius: 50%;
+	border-radius: 100%;
 	width: 300px;
 	height: 300px;
 	display: flex;
@@ -34,28 +34,28 @@
 
 .drag-drop-outline {
 	position: absolute;
-	border-radius: 50%;
+	border-radius: 100%;
 	width: 320px;
 	height: 320px;
 	outline: 5px dashed #006cc7;
 	animation: drag-drop 120s infinite linear;
 }
 .drag-drop-circle-1 {
-	border-radius: 50%;
+	border-radius: 100%;
 	position: absolute;
 	border: 100px solid #132144;
 	width: 500px;
 	height: 500px;
 }
 .drag-drop-circle-2 {
-	border-radius: 50%;
+	border-radius: 100%;
 	position: absolute;
 	border: 100px solid #18233d;
 	width: 650px;
 	height: 650px;
 }
 .drag-drop-circle-3 {
-	border-radius: 50%;
+	border-radius: 100%;
 	position: absolute;
 	border: 125px solid #1c2135;
 	width: 900px;
